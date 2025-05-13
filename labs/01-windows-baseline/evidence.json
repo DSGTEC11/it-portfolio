@@ -1,0 +1,60 @@
+{
+  "Lab": "LAB-001",
+  "CollectionTimeChicago": "2026-10-22 11:35:16 -05:00",
+  "Method": "PowerShell collection on the actual Windows computer; selected read-only fields",
+  "ElevatedSession": false,
+  "OS": {
+    "Caption": "Microsoft Windows 11 Home",
+    "Version": "10.0.26300",
+    "Build": "26300",
+    "Architecture": "64-bit",
+    "DisplayVersion": "26H2",
+    "RegistryBuild": "26300",
+    "UpdateBuildRevision": 9711,
+    "LegacyProductName": "Windows 10 Home"
+  },
+  "CPU": [
+    {
+      "Name": "Intel(R) Core(TM) i7-14700F",
+      "NumberOfCores": 20,
+      "NumberOfLogicalProcessors": 28
+    }
+  ],
+  "Memory": {
+    "InstalledGiB": 32.0,
+    "OSVisibleGiB": 31.84,
+    "FreeAtCollectionGiB": 20.85
+  },
+  "SystemVolume": {
+    "Label": "System volume (identifier omitted)",
+    "FileSystem": "NTFS",
+    "SizeGiB": 1861.37,
+    "FreeGiB": 1364.2,
+    "FreePercent": 73.29
+  },
+  "Firewall": [
+    {
+      "Name": "Domain",
+      "Enabled": "True"
+    },
+    {
+      "Name": "Private",
+      "Enabled": "True"
+    },
+    {
+      "Name": "Public",
+      "Enabled": "True"
+    }
+  ],
+  "NetworkCategories": [
+    {
+      "Category": "Public"
+    }
+  ],
+  "Defender": {
+    "AMServiceEnabled": true,
+    "AntivirusEnabled": true,
+    "RealTimeProtectionEnabled": true,
+    "AntivirusSignatureAge": 0
+  }
+}

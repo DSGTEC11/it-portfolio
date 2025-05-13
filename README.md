@@ -2,7 +2,11 @@
 
 A starter portfolio for entry-level help desk and IT support roles.
 
-> **Status:** Documentation drafts and planned practice. These are not claims of professional experience or completed troubleshooting. Lab evidence will be added only after the exercises are performed.
+> **Status:** One completed Windows baseline lab with actual sanitized evidence. Runbooks remain drafts and other Windows exercises remain planned. These are learning materials, not claims of professional experience or completed incident resolution.
+
+## Completed lab
+
+[LAB-001: Windows system baseline](labs/01-windows-baseline/README.md) — October 22, 2026. Read-only OS, CPU, memory, storage, and selected security observations from an actual Windows computer, with a reproducible script, sanitized output, and lab ticket.
 
 ## Contents
 
@@ -92,14 +96,14 @@ Evidence: [redacted screenshots or outputs]
 
 ## Windows lab roadmap
 
-All exercises below are **planned**, not completed. Use an isolated personal lab and dummy accounts/data.
+The baseline and its ticket are completed. All remaining exercises are **planned**. Use an isolated personal lab and dummy accounts/data for exercises that change accounts or permissions.
 
-- [ ] **System baseline:** Record Windows version, CPU, memory, free storage, and relevant settings. Explain what each tells a technician.
+- [x] **System baseline:** [Actual results, explanations, and sanitized evidence](labs/01-windows-baseline/README.md).
 - [ ] **Standard user accounts:** Create a dummy standard account, test sign-in, and document standard versus administrator access.
 - [ ] **Folder permissions:** Use dummy files to compare allowed and denied access. Record configuration, expected result, actual result, and cleanup.
 - [ ] **Connectivity investigation:** Run the network runbook in the lab, capture redacted observations, and explain what each test does and does not prove.
 - [ ] **Event Viewer investigation:** Find a harmless application event and explain the timestamp, source, event ID, and relevance without assuming every warning is a fault.
-- [ ] **Ticket write-up:** Complete the template for one real lab exercise with evidence and verification.
+- [x] **Ticket write-up:** [LAB-001 baseline ticket](labs/01-windows-baseline/ticket.md), completed.
 
 ### Evidence required for a completed lab
 
