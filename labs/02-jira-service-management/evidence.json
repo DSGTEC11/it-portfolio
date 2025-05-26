@@ -8,13 +8,44 @@
   "work_type": "[System] Service request",
   "request_type": "Get IT help",
   "tickets": [
-    {"key": "IT-1", "scenario": "Fictional account lockout", "priority": "Medium", "status": "In Progress", "assigned_to": "Lab owner", "notes": "Internal triage and closure-blocker notes saved", "limitation": "Resolution selector returned no matches; attempted closure did not persist"},
-    {"key": "IT-2", "scenario": "Fictional VPN resource-access failure", "priority": "Medium", "status": "Escalated", "assigned_to": "Lab owner", "notes": "Internal simulation escalation note submitted", "limitation": "Cause unknown; no diagnostics, repair, or real team handoff performed"},
-    {"key": "IT-3", "scenario": "Fictional departmental-folder access request", "priority": "Low", "status": "Pending", "pending_reason": "Awaiting approval", "assigned_to": "Lab owner", "notes": "Internal approval-dependency note submitted", "limitation": "No real approval requested and no access granted"}
+    {
+      "key": "IT-1",
+      "scenario": "Fictional account lockout",
+      "priority": "Medium",
+      "status": "Resolved",
+      "assigned_to": "Lab owner",
+      "notes": "Triage, initial blocker, and simulation closure notes saved",
+      "limitation": "Only the training workflow was completed; no live account unlock or sign-in verification",
+      "resolution": "Simulation completed"
+    },
+    {
+      "key": "IT-2",
+      "scenario": "Fictional VPN resource-access failure",
+      "priority": "Medium",
+      "status": "Escalated",
+      "assigned_to": "Lab owner",
+      "notes": "Internal escalation note and detailed proposed triage/escalation plan saved",
+      "limitation": "Cause unknown; no diagnostics, repair, or real team handoff performed"
+    },
+    {
+      "key": "IT-3",
+      "scenario": "Fictional departmental-folder access request",
+      "priority": "Low",
+      "status": "Pending",
+      "pending_reason": "Awaiting approval",
+      "assigned_to": "Lab owner",
+      "notes": "Internal approval-dependency note submitted",
+      "limitation": "No real approval requested and no access granted"
+    }
   ],
-  "verification": "Three saved assignments and statuses verified in All open queue; IT-1 status also checked after reload",
-  "screenshot": "queue-evidence.png",
+  "verification": "IT-1 Resolved / Simulation completed verified after reload. All open queue then showed only IT-2 Escalated and IT-3 Pending.",
   "sanitization": "Direct screenshot crop excludes account email, site URL and unrelated UI. Professional name retained. Selected JSON omits account IDs, email, site address and organization identifiers.",
   "real_account_network_or_permission_changes": false,
-  "closure_demonstration_complete": false
+  "closure_demonstration_complete": true,
+  "configuration_change": "Empty global Resolutions table observed. Added Simulation completed; did not set a default or change workflow definitions.",
+  "screenshots": [
+    "queue-evidence.png (before closure fix)",
+    "resolved-evidence.png (verified closure)",
+    "queue-after-closure.png (two unresolved tickets)"
+  ]
 }

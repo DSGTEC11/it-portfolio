@@ -4,7 +4,7 @@
 
 **Environment:** Jira Service Management Cloud, Service Collection Free signup, IT Service Project (IT).
 
-**Result:** Three fictional support cases created, assigned, prioritized, documented with internal notes, and moved through actual Jira workflows. The planned closure demonstration remains incomplete because the resolution selection did not return any choices.
+**Result:** Three fictional support cases created, assigned, prioritized, documented with internal notes, and moved through actual Jira workflows. The closure demonstration is complete: an empty resolution list was identified, a training-specific resolution was added, and IT-1 was verified Resolved after reload.
 
 This is a hands-on ticket-management exercise. Account troubleshooting, VPN diagnostics, and access provisioning in the scenarios are hypothetical; no live account, network, or folder permissions were changed. No professional support experience or successful real incident resolution is claimed.
 
@@ -19,34 +19,41 @@ Practice recording symptoms, assessing impact, assigning ownership, distinguishi
 3. Assigned each record to the lab owner with **Assign to me**. The lab owner is also the reporter; fictional users are only characters in the descriptions.
 4. Kept IT-1 and IT-2 at Medium priority and changed IT-3 to Low. These choices use illustrative lab assumptions, not a universal priority matrix.
 5. Added internal notes and submitted the transition forms. No customer replies, real team handoffs, or approval requests were sent.
-6. Reopened the All open queue and verified all three saved statuses and assignments. Reloading IT-1 confirmed its attempted closure had not persisted.
+6. Reopened the All open queue and verified all three saved statuses and assignments. The first reload confirmed the initial closure had not persisted. After correcting the resolution configuration, another reload confirmed Resolved with resolution Simulation completed; the All open queue then contained only IT-2 and IT-3.
 
 | Jira key | Scenario | Priority | Verified final state | Meaning |
 | --- | --- | --- | --- | --- |
-| IT-1 | Account locked after repeated sign-in attempts | Medium | In Progress | Triage note saved; resolution attempt did not persist. |
+| IT-1 | Account locked after repeated sign-in attempts | Medium | Resolved | Resolution: Simulation completed. Closure verified after reload. |
 | IT-2 | VPN connects but an internal resource is unavailable | Medium | Escalated | Open simulation with proposed next steps; cause unknown and no real network team contacted. |
 | IT-3 | Request access to a departmental folder | Low | Pending | Pending reason: Awaiting approval. No authorization or permission change occurred. |
 
-All three records remain unresolved. Moving IT-2 to Escalated did not transfer ownership to another person. Setting IT-3 to Pending did not implement an approval automation.
+IT-1 is resolved as a completed training exercise; IT-2 and IT-3 remain unresolved. Moving IT-2 to Escalated did not transfer ownership to another person. Setting IT-3 to Pending did not implement an approval automation.
 
 ## Observed closure issue
 
 For IT-1, the successful transition was **Waiting for support → In Progress**. Next, **Resolve this issue** opened a form whose Resolution selector displayed **No matches found**, including when searching for **Done**. An attempted update did not save a resolved state. Reloading the ticket showed **In Progress**. A separate internal note records that result.
 
-The cause was not established. The next investigation would review available resolution values and the workflow transition configuration. No workflow or global resolution settings were changed. An optimistic status display while a transition dialog is open is not evidence that the change saved.
+Follow-up investigation: Jira admin settings → Work items → Resolutions showed an empty table. Added one global resolution, **Simulation completed**, with the description: “Training workflow completed. Does not indicate a real customer incident was repaired or live system access was verified.” It then appeared in the ticket transition selector. Selected it and submitted an internal closure note. Reloading IT-1 verified **Resolved / Simulation completed**, and the ticket disappeared from All open. No workflow definitions or default-resolution setting were changed. Why the new site initially had no resolutions was not established.
+
+This is a site-wide resolution value, not a custom field limited to one ticket. It was intentionally named for training use. An optimistic status display while a transition dialog is open is not evidence that the change saved.
 
 ## Evidence
 
-![Actual Jira All open queue with three simulation tickets](queue-evidence.png)
+![Verified resolved training ticket after reload](resolved-evidence.png)
+
+![All open queue after closure: two unresolved tickets](queue-after-closure.png)
+
+[Earlier queue capture before the closure fix](queue-evidence.png) preserves the initial observed state.
 
 - [Selected observed results](evidence.json): manually recorded from the visible Jira interface; not a Jira API export.
 - [Fictional ticket descriptions and proposed troubleshooting](ticket-scenarios.md).
+- [Detailed VPN triage and escalation note saved to IT-2](vpn-triage-note.md).
 
-The screenshot is a direct cropped capture of the queue. The crop excludes the browser address bar, site address, account-email control, and unrelated sidebar content. It retains the portfolio owner's professional name to show assignment; it contains no real customer data. Screenshot contents were not reconstructed or altered.
+The screenshots are direct cropped captures of Jira. The crop excludes the browser address bar, site address, account-email control, and unrelated sidebar content. It retains the portfolio owner's professional name to show assignment; it contains no real customer data. Screenshot contents were not reconstructed or altered.
 
 ## Interview explanation
 
-“I used a free Jira Service Management space to practice handling three fictional support requests. I documented impact, triage questions, ownership, internal notes, and next steps. I left the VPN case unresolved because a connected VPN indicator does not prove access to the requested resource. For the access request, I recorded the approval dependency and used least-privilege reasoning without granting access. I also caught a Jira resolution attempt that did not persist, verified the saved state, and documented the limitation.”
+“I used a free Jira Service Management space to practice handling three fictional support requests. I documented impact, triage questions, ownership, internal notes, and next steps. I left the VPN case unresolved because a connected VPN indicator does not prove access to the requested resource. For the access request, I recorded the approval dependency and used least-privilege reasoning without granting access. I also caught a Jira resolution attempt that did not persist, found an empty resolution list, added a training-specific resolution, and verified the ticket stayed resolved after reloading.”
 
 Useful points to explain:
 
@@ -59,4 +66,4 @@ Useful points to explain:
 
 ## Retention and follow-up
 
-The three practice records remain in Jira for review. No account, VPN, or permission changes need rollback. No SLA targets, automation rules, custom forms, approval workflow, or knowledge-base integration were configured or validated. Follow-up: investigate the resolution selector and complete a verified closure demonstration before claiming that step is finished.
+The three practice records remain in Jira for review. No account, VPN, or permission changes need rollback. No SLA targets, automation rules, custom forms, approval workflow, or knowledge-base integration were configured or validated. The closure demonstration is now verified. The added global resolution remains available for future training tickets; do not treat it as evidence of real technical remediation.

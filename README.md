@@ -2,13 +2,13 @@
 
 A starter portfolio for entry-level help desk and IT support roles.
 
-> **Status:** A completed Windows baseline lab and a Jira ticket-management exercise with actual sanitized evidence. The Jira closure demonstration remains incomplete and its observed blocker is documented. Runbooks remain drafts and other Windows exercises remain planned. These are learning materials, not claims of professional experience or completed incident resolution.
+> **Status:** A completed Windows baseline lab and a Jira ticket-management exercise with actual sanitized evidence. The Jira exercise includes a verified simulation closure and a documented resolution-configuration fix. Runbooks remain drafts and other Windows exercises remain planned. These are learning materials, not claims of professional experience or completed incident resolution.
 
 ## Hands-on labs
 
 [LAB-001: Windows system baseline](labs/01-windows-baseline/README.md) — October 22, 2026. Read-only OS, CPU, memory, storage, and selected security observations from an actual Windows computer, with a reproducible script, sanitized output, and lab ticket.
 
-[LAB-002: Jira Service Management ticket workflow](labs/02-jira-service-management/README.md) — October 22, 2026. Three fictional cases managed in Jira: assignment, priorities, internal notes, In Progress/Escalated/Pending states, an approval dependency, and a documented unsuccessful closure attempt. Includes an actual queue screenshot and selected observations.
+[LAB-002: Jira Service Management ticket workflow](labs/02-jira-service-management/README.md) — October 22, 2026. Three fictional cases managed in Jira: assignment, priorities, internal notes, In Progress/Resolved/Escalated/Pending states, an approval dependency, and a verified fix for an empty resolution list. Includes an actual queue screenshot and selected observations.
 
 ## Contents
 
