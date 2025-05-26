@@ -1,0 +1,20 @@
+{
+  "lab_id": "LAB-002",
+  "observed_date": "2026-10-22",
+  "source": "Manual observation of visible Jira ticket pages and All open queue; not an API export",
+  "project": "IT Service Project",
+  "project_key": "IT",
+  "signup_plan_selected": "Service Collection Free",
+  "work_type": "[System] Service request",
+  "request_type": "Get IT help",
+  "tickets": [
+    {"key": "IT-1", "scenario": "Fictional account lockout", "priority": "Medium", "status": "In Progress", "assigned_to": "Lab owner", "notes": "Internal triage and closure-blocker notes saved", "limitation": "Resolution selector returned no matches; attempted closure did not persist"},
+    {"key": "IT-2", "scenario": "Fictional VPN resource-access failure", "priority": "Medium", "status": "Escalated", "assigned_to": "Lab owner", "notes": "Internal simulation escalation note submitted", "limitation": "Cause unknown; no diagnostics, repair, or real team handoff performed"},
+    {"key": "IT-3", "scenario": "Fictional departmental-folder access request", "priority": "Low", "status": "Pending", "pending_reason": "Awaiting approval", "assigned_to": "Lab owner", "notes": "Internal approval-dependency note submitted", "limitation": "No real approval requested and no access granted"}
+  ],
+  "verification": "Three saved assignments and statuses verified in All open queue; IT-1 status also checked after reload",
+  "screenshot": "queue-evidence.png",
+  "sanitization": "Direct screenshot crop excludes account email, site URL and unrelated UI. Professional name retained. Selected JSON omits account IDs, email, site address and organization identifiers.",
+  "real_account_network_or_permission_changes": false,
+  "closure_demonstration_complete": false
+}
