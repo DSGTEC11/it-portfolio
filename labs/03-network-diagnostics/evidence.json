@@ -1,0 +1,33 @@
+{
+  "lab_id": "LAB-003",
+  "captured_at": "2026-10-22T17:40:44.8916266-05:00",
+  "purpose": "Read-only network baseline; no outage injected or repair claimed",
+  "active_adapters": [
+    {
+      "adapter_label": "Active adapter 1",
+      "media_type": "Native 802.11",
+      "status": "Up",
+      "negotiated_link_speed": "2.4 Gbps",
+      "ipv4_address_count": 1,
+      "has_apipa_address": false,
+      "ipv4_prefix_origins": [
+        "Dhcp"
+      ],
+      "default_ipv4_route_present": true,
+      "dns_server_count": 4,
+      "network_category": "Public",
+      "windows_ipv4_connectivity": "Internet",
+      "windows_ipv6_connectivity": "Internet",
+      "gateway_icmp_any_reply_two_probes": true
+    }
+  ],
+  "disconnected_adapter_count": 2,
+  "test_target": "example.com",
+  "dns_a_lookup_succeeded": true,
+  "dns_a_answer_count": 2,
+  "tcp_443_succeeded": true,
+  "https_head_succeeded": true,
+  "https_status_code": 200,
+  "sanitization": "No hostnames, usernames, SSIDs, MAC addresses, IP addresses, gateway addresses, DNS server addresses, adapter descriptions or raw exception messages retained",
+  "configuration_changed": false
+}

@@ -2,13 +2,15 @@
 
 A starter portfolio for entry-level help desk and IT support roles.
 
-> **Status:** A completed Windows baseline lab and a Jira ticket-management exercise with actual sanitized evidence. The Jira exercise includes a verified simulation closure and a documented resolution-configuration fix. Runbooks remain drafts and other Windows exercises remain planned. These are learning materials, not claims of professional experience or completed incident resolution.
+> **Status:** Completed Windows system and network baseline labs, plus a Jira ticket-management exercise, with actual sanitized evidence. The Jira exercise includes a verified simulation closure and a documented resolution-configuration fix. Runbooks remain drafts and other Windows exercises remain planned. These are learning materials, not claims of professional experience or completed incident resolution.
 
 ## Hands-on labs
 
 [LAB-001: Windows system baseline](labs/01-windows-baseline/README.md) — October 22, 2026. Read-only OS, CPU, memory, storage, and selected security observations from an actual Windows computer, with a reproducible script, sanitized output, and lab ticket.
 
 [LAB-002: Jira Service Management ticket workflow](labs/02-jira-service-management/README.md) — October 22, 2026. Three fictional cases managed in Jira: assignment, priorities, internal notes, In Progress/Resolved/Escalated/Pending states, an approval dependency, and a verified fix for an empty resolution list. Includes an actual queue screenshot and selected observations.
+
+[LAB-003: Windows network diagnostics](labs/03-network-diagnostics/README.md) — October 22, 2026. Actual adapter, DHCP, route, gateway, DNS, TCP and HTTPS observations. Includes a repeatable script, sanitized JSON, and verified Jira lab closure.
 
 ## Contents
 
@@ -30,7 +32,7 @@ A starter portfolio for entry-level help desk and IT support roles.
 
 ## Network troubleshooting runbook
 
-**Type:** Draft runbook; not yet validated in a lab.
+**Type:** Draft troubleshooting runbook. Basic configuration, gateway, DNS and HTTPS checks exercised in [LAB-003](labs/03-network-diagnostics/README.md); failure branches and remediation remain unvalidated.
 
 **Symptom:** A Windows user cannot access a website or network resource.
 
@@ -98,12 +100,12 @@ Evidence: [redacted screenshots or outputs]
 
 ## Windows lab roadmap
 
-The baseline and its ticket are completed. All remaining exercises are **planned**. Use an isolated personal lab and dummy accounts/data for exercises that change accounts or permissions.
+The system baseline, network diagnostics, and their tickets are completed. Unchecked exercises are **planned**. Use an isolated personal lab and dummy accounts/data for exercises that change accounts or permissions.
 
 - [x] **System baseline:** [Actual results, explanations, and sanitized evidence](labs/01-windows-baseline/README.md).
 - [ ] **Standard user accounts:** Create a dummy standard account, test sign-in, and document standard versus administrator access.
 - [ ] **Folder permissions:** Use dummy files to compare allowed and denied access. Record configuration, expected result, actual result, and cleanup.
-- [ ] **Connectivity investigation:** Run the network runbook in the lab, capture redacted observations, and explain what each test does and does not prove.
+- [x] **Connectivity investigation:** [Actual read-only configuration and connectivity checks](labs/03-network-diagnostics/README.md). No fault observed; failure diagnosis and remediation remain untested.
 - [ ] **Event Viewer investigation:** Find a harmless application event and explain the timestamp, source, event ID, and relevance without assuming every warning is a fault.
 - [x] **Ticket write-up:** [LAB-001 baseline ticket](labs/01-windows-baseline/ticket.md), completed.
 
