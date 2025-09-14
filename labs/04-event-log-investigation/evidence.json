@@ -1,0 +1,38 @@
+{
+  "lab_id": "LAB-004",
+  "captured_at": "2026-10-22T17:45:51.3505403-05:00",
+  "method": "Get-WinEvent: actual Windows System event log, read-only; Event Viewer GUI not used",
+  "query_start": "2026-10-15T17:45:51.3505403-05:00",
+  "query_end": "2026-10-22T17:45:51.3505403-05:00",
+  "matching_134_count": 4,
+  "selected_warning_time": "2026-10-22T11:19:25.8606475-05:00",
+  "correlation_window": "5 minutes before through 15 minutes after selected event",
+  "timeline": [
+    {
+      "time": "2026-10-22T11:19:25.8606475-05:00",
+      "provider": "Microsoft-Windows-Time-Service",
+      "event_id": 134,
+      "level": "Warning"
+    },
+    {
+      "time": "2026-10-22T11:19:26.1207321-05:00",
+      "provider": "Microsoft-Windows-Time-Service",
+      "event_id": 158,
+      "level": "Information"
+    },
+    {
+      "time": "2026-10-22T11:20:09.9060372-05:00",
+      "provider": "Microsoft-Windows-Time-Service",
+      "event_id": 37,
+      "level": "Information"
+    },
+    {
+      "time": "2026-10-22T11:20:25.8711068-05:00",
+      "provider": "Microsoft-Windows-Time-Service",
+      "event_id": 35,
+      "level": "Information"
+    }
+  ],
+  "configuration_changed": false,
+  "sanitization": "Only selected time/provider/event ID/level retained; no computer names, account IDs, SIDs, addresses, record IDs or raw messages/XML"
+}

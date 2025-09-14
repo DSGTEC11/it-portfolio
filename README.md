@@ -2,7 +2,7 @@
 
 A starter portfolio for entry-level help desk and IT support roles.
 
-> **Status:** Completed Windows system and network baseline labs, plus a Jira ticket-management exercise, with actual sanitized evidence. The Jira exercise includes a verified simulation closure and a documented resolution-configuration fix. Runbooks remain drafts and other Windows exercises remain planned. These are learning materials, not claims of professional experience or completed incident resolution.
+> **Status:** Completed Windows system/network baseline and event-log investigation labs, plus a Jira ticket-management exercise, with actual sanitized evidence. The Jira exercise includes a verified simulation closure and a documented resolution-configuration fix. Runbooks remain drafts and other Windows exercises remain planned. These are learning materials, not claims of professional experience or completed incident resolution.
 
 ## Hands-on labs
 
@@ -11,6 +11,8 @@ A starter portfolio for entry-level help desk and IT support roles.
 [LAB-002: Jira Service Management ticket workflow](labs/02-jira-service-management/README.md) — October 22, 2026. Three fictional cases managed in Jira: assignment, priorities, internal notes, In Progress/Resolved/Escalated/Pending states, an approval dependency, and a verified fix for an empty resolution list. Includes an actual queue screenshot and selected observations.
 
 [LAB-003: Windows network diagnostics](labs/03-network-diagnostics/README.md) — October 22, 2026. Actual adapter, DHCP, route, gateway, DNS, TCP and HTTPS observations. Includes a repeatable script, sanitized JSON, and verified Jira lab closure.
+
+[LAB-004: Windows event-log investigation](labs/04-event-log-investigation/README.md) — October 22, 2026. Actual Time-Service warning, correlated recovery events, and a current service-status limitation. Includes sanitized evidence, collector script, and Jira documentation.
 
 ## Contents
 
@@ -100,13 +102,13 @@ Evidence: [redacted screenshots or outputs]
 
 ## Windows lab roadmap
 
-The system baseline, network diagnostics, and their tickets are completed. Unchecked exercises are **planned**. Use an isolated personal lab and dummy accounts/data for exercises that change accounts or permissions.
+The system baseline, network diagnostics, event-log investigation, and their tickets are completed. Unchecked exercises are **planned**. Use an isolated personal lab and dummy accounts/data for exercises that change accounts or permissions.
 
 - [x] **System baseline:** [Actual results, explanations, and sanitized evidence](labs/01-windows-baseline/README.md).
 - [ ] **Standard user accounts:** Create a dummy standard account, test sign-in, and document standard versus administrator access.
 - [ ] **Folder permissions:** Use dummy files to compare allowed and denied access. Record configuration, expected result, actual result, and cleanup.
 - [x] **Connectivity investigation:** [Actual read-only configuration and connectivity checks](labs/03-network-diagnostics/README.md). No fault observed; failure diagnosis and remediation remain untested.
-- [ ] **Event Viewer investigation:** Find a harmless application event and explain the timestamp, source, event ID, and relevance without assuming every warning is a fault.
+- [x] **Windows event-log investigation:** [Actual Time-Service event correlation](labs/04-event-log-investigation/README.md) using PowerShell; Event Viewer GUI not used.
 - [x] **Ticket write-up:** [LAB-001 baseline ticket](labs/01-windows-baseline/ticket.md), completed.
 
 ### Evidence required for a completed lab
