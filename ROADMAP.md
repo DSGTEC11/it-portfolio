@@ -12,4 +12,3 @@
 Azure, Active Directory and Microsoft Entra ID labs have not been completed in this portfolio.
 
 For each future lab, document the environment, steps, actual results, verification, cleanup and limitations. Publish only sanitized evidence.
-
