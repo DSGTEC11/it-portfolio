@@ -1,4 +1,4 @@
-# DeCarlos Griffin | IT Support Portfolio
+# DeCarlos Griffin | IT Portfolio
 
 Practical Windows diagnostics, Jira ticket management, and clear support documentation for entry-level help desk and IT support roles.
 
