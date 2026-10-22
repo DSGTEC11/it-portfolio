@@ -44,9 +44,7 @@
   "closure_demonstration_complete": true,
   "configuration_change": "Empty global Resolutions table observed. Added Simulation completed; did not set a default or change workflow definitions.",
   "screenshots": [
-    "queue-evidence.png (before closure fix)",
-    "resolved-evidence.png (verified closure)",
-    "queue-after-closure.png (two unresolved tickets)"
+    "Screenshots retained privately because they contain timestamps."
   ],
   "timestamp_privacy": "Exact dates and timestamps withheld from this public copy; original evidence retained privately."
 }

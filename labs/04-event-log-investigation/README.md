@@ -23,7 +23,7 @@ This sequence supports recovery of the historical time-source operation. It does
 
 ## Current follow-up and limitations
 
-At approximately 17:45 Central:
+During the subsequent check (exact time withheld for privacy):
 
 - `Resolve-DnsName time.windows.com -Type A -DnsOnly` returned one A record. The address was omitted from public evidence. This later success does not explain the earlier failure.
 - `w32tm /query /status` returned **The service has not been started (0x80070426)**.
