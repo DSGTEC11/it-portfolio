@@ -1,6 +1,6 @@
 # IT-2: Internal triage and escalation note
 
-Saved to Jira on May 26, 2025. This is a proposed plan for a fictional case, not diagnostic output.
+Saved to Jira on [date withheld for privacy]. This is a proposed plan for a fictional case, not diagnostic output.
 
 SIMULATION — proposed triage and escalation plan; no live diagnostic results.
 

@@ -1,6 +1,6 @@
 {
   "method": "Manual transcription of separately observed read-only command results",
-  "checked_at": "2026-10-22T17:45:55-05:00",
+  "checked_at": "withheld for privacy",
   "dns_target": "time.windows.com",
   "dns_a_record_count": 1,
   "w32tm_status_query": "The service has not been started",
@@ -10,5 +10,6 @@
   "startup_type": "Manual",
   "current_synchronization_verified": false,
   "clock_offset_measured": false,
-  "configuration_changed": false
+  "configuration_changed": false,
+  "timestamp_privacy": "Exact dates and timestamps withheld from this public copy; original evidence retained privately."
 }

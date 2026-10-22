@@ -1,6 +1,6 @@
 # LAB-004: Windows event-log investigation
 
-**Date:** September 14, 2025. **Method:** Actual Windows event logs queried with PowerShell `Get-WinEvent`; the Event Viewer GUI was not used.
+**Date:** [date withheld for privacy]. **Method:** Actual Windows event logs queried with PowerShell `Get-WinEvent`; the Event Viewer GUI was not used.
 
 **Result:** A time-service DNS warning was followed by valid-time-data and synchronization events. The initial DNS failure's cause remains unknown. Current synchronization could not be confirmed because the time service was stopped. No repair or configuration change was performed.
 
@@ -10,14 +10,14 @@ Practice identifying an event by log, provider, event ID, severity and time; rea
 
 ## Actual timeline
 
-All times below are September 14, 2025, Central time (UTC-05:00), in the **System** log from **Microsoft-Windows-Time-Service**. Message descriptions are selected paraphrases of locally inspected events, not full exported messages.
+The elapsed times below describe the observed sequence in the **System** log from **Microsoft-Windows-Time-Service**. Message descriptions are selected paraphrases of locally inspected events, not full exported messages.
 
-| Time | ID / severity | Message finding | Interpretation |
+| Elapsed time | ID / severity | Message finding | Interpretation |
 | --- | --- | --- | --- |
-| 11:19:25.860 | 134 / Warning | NtpClient could not resolve its configured time source, time.windows.com; error 0x80072AF9. | A DNS lookup failed at that time. It does not identify the underlying cause. |
-| 11:19:26.120 | 158 / Information | VM time provider stopped because its environment was unsupported; message notes this can be expected outside a Hyper-V guest. | Context only; no causal connection to the DNS failure was established. |
-| 11:20:09.906 | 37 / Information | NtpClient reported valid time data from the time source. | About 44 seconds later, valid data was received. |
-| 11:20:25.871 | 35 / Information | Time service reported synchronizing with the time source. | About 60 seconds later, synchronization was reported. |
+| 0 seconds | 134 / Warning | NtpClient could not resolve its configured time source, time.windows.com; error 0x80072AF9. | A DNS lookup failed at that time. It does not identify the underlying cause. |
+| +0.260 seconds | 158 / Information | VM time provider stopped because its environment was unsupported; message notes this can be expected outside a Hyper-V guest. | Context only; no causal connection to the DNS failure was established. |
+| +44.045 seconds | 37 / Information | NtpClient reported valid time data from the time source. | About 44 seconds later, valid data was received. |
+| +60.010 seconds | 35 / Information | Time service reported synchronizing with the time source. | About 60 seconds later, synchronization was reported. |
 
 This sequence supports recovery of the historical time-source operation. It does not prove the clock's exact offset, why the warning occurred, or continued synchronization afterward. Network readiness is a possible explanation, not a confirmed cause.
 
@@ -34,7 +34,7 @@ Current synchronization and actual clock accuracy remain unverified. A stopped s
 ## Reproduction and evidence
 
 - [Collect-EventEvidence.ps1](Collect-EventEvidence.ps1) selects the newest matching warning in a bounded seven-day window, counts matching warnings, and exports nearby same-provider metadata from five minutes before through fifteen minutes after it.
-- [evidence.json](evidence.json) contains actual timestamps, event IDs, severities and the query window.
+- [evidence.json](evidence.json) contains event IDs, severities, relative event timing, and the query-window duration. Exact timestamps are withheld for privacy.
 - [follow-up.json](follow-up.json) records the separately observed current DNS and service checks; it is a manually transcribed observation, not raw command output.
 
 Run the collector from PowerShell in this folder:
@@ -45,7 +45,7 @@ Run the collector from PowerShell in this folder:
 
 The collector intentionally stops if no matching event is available. It does not invent a sample, export rendered messages or XML, clear logs, alter services, or repeat the separate DNS/status checks. Re-running later can select a different warning. Read-only messages were inspected locally for this report; their selected meaning was paraphrased in the table.
 
-![Jira event-investigation record](jira-evidence.png)
+Screenshots retained privately because they contain timestamps.
 
 The screenshot is a direct crop of Jira. Public evidence excludes computer names, user/account IDs, SIDs, IP addresses, event record IDs and raw XML/messages. The professional portfolio name remains visible in Jira. No rollback was needed because no system settings were changed.
 

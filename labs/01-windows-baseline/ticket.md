@@ -1,7 +1,7 @@
 # LAB-001 — Record a Windows system baseline
 
 - **Type:** Real learning lab; not a production incident.
-- **Date/environment:** May 13, 2025, 11:35 CDT; Windows 11 Home, 64-bit, locally reported build 26300.9711; non-elevated session.
+- **Date/environment:** [date withheld for privacy]; Windows 11 Home, 64-bit, locally reported build 26300.9711; non-elevated session.
 - **Request:** Establish and document a read-only starting state for future Windows support practice.
 - **Reported symptom/error:** None. No performance fault reported.
 - **Scope/impact:** One personal computer. No business outage established.

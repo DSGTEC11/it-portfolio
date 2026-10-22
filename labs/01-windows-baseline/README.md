@@ -1,6 +1,6 @@
 # LAB-001: Windows system baseline
 
-**Status:** Completed read-only collection on May 13, 2025, at 11:35 CDT. Real results from the portfolio owner's Windows computer. This is a learning exercise, not professional support experience.
+**Status:** Completed read-only collection on [date withheld for privacy]. Real results from the portfolio owner's Windows computer. This is a learning exercise, not professional support experience.
 
 ## Objective and starting condition
 
@@ -44,7 +44,7 @@ No accounts, permissions, services, firewall rules, or security settings were ch
 
 ## Privacy review
 
-Evidence is sanitized by selecting fields before saving. It excludes hostnames, usernames, email addresses, IP/MAC addresses, SSIDs, serial numbers, product IDs/keys, file listings, process command lines, and employer/customer data. The published CPU model, OS build, capacity figures, security flags, and collection time are the technical evidence for this lab. No raw transcript or desktop screenshot is included. A field allowlist reduces exposure but the JSON must still be reviewed before each future publication.
+Evidence is sanitized by selecting fields before saving. It excludes hostnames, usernames, email addresses, IP/MAC addresses, SSIDs, serial numbers, product IDs/keys, file listings, process command lines, and employer/customer data. The published CPU model, OS build, capacity figures, and security flags are the technical evidence for this lab. No raw transcript or desktop screenshot is included. A field allowlist reduces exposure but the JSON must still be reviewed before each future publication.
 
 ## Explain it in an interview
 

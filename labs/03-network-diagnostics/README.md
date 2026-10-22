@@ -1,6 +1,6 @@
 # LAB-003: Windows network baseline and connectivity checks
 
-**Date:** June 22, 2025, 17:40 Central time. **Jira record:** IT-4.
+**Date:** [date withheld for privacy]. **Jira record:** IT-4.
 
 **Completed actual lab:** Read-only checks on the personal Windows computer. No outage was injected, no fault was observed in the tested path, and no repair is claimed.
 
@@ -44,7 +44,7 @@ The default output replaces `evidence.json` with a new timestamped observation. 
 
 The [sanitized JSON](evidence.json) was produced by the script on the actual computer, not typed from expected outcomes. The script completed successfully; the JSON was parsed and the selected results reviewed. Jira IT-4 contains the observed results and limitations, is assigned to the lab owner, and has Low priority because this is planned lab work with no outage. A global resolution named **Lab completed** was added for actual completed labs; it does not imply incident repair. No default resolution or workflow definition was changed. IT-4 was closed as **Resolved / Lab completed**; status, resolution, Low priority and assignment were verified after reloading.
 
-![Jira record with actual network results](jira-evidence.png)
+Screenshots retained privately because they contain timestamps.
 
 ## Privacy, cleanup, and limitations
 

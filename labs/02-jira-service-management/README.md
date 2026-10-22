@@ -1,6 +1,6 @@
 # LAB-002: Jira Service Management ticket workflow
 
-**Date:** May 26, 2025
+**Date:** [date withheld for privacy]
 
 **Environment:** Jira Service Management Cloud, Service Collection Free signup, IT Service Project (IT).
 
@@ -39,11 +39,11 @@ This is a site-wide resolution value, not a custom field limited to one ticket. 
 
 ## Evidence
 
-![Verified resolved training ticket after reload](resolved-evidence.png)
+Screenshots retained privately because they contain timestamps.
 
-![All open queue after closure: two unresolved tickets](queue-after-closure.png)
+Screenshots retained privately because they contain timestamps.
 
-[Earlier queue capture before the closure fix](queue-evidence.png) preserves the initial observed state.
+Screenshots retained privately because they contain timestamps. preserves the initial observed state.
 
 - [Selected observed results](evidence.json): manually recorded from the visible Jira interface; not a Jira API export.
 - [Fictional ticket descriptions and proposed troubleshooting](ticket-scenarios.md).

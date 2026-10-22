@@ -1,6 +1,6 @@
 {
   "lab_id": "LAB-003",
-  "captured_at": "2026-10-22T17:40:44.8916266-05:00",
+  "captured_at": "withheld for privacy",
   "purpose": "Read-only network baseline; no outage injected or repair claimed",
   "active_adapters": [
     {
@@ -29,5 +29,6 @@
   "https_head_succeeded": true,
   "https_status_code": 200,
   "sanitization": "No hostnames, usernames, SSIDs, MAC addresses, IP addresses, gateway addresses, DNS server addresses, adapter descriptions or raw exception messages retained",
-  "configuration_changed": false
+  "configuration_changed": false,
+  "timestamp_privacy": "Exact dates and timestamps withheld from this public copy; original evidence retained privately."
 }

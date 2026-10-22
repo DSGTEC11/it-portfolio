@@ -1,6 +1,6 @@
 {
   "lab_id": "LAB-002",
-  "observed_date": "2026-10-22",
+  "observed_date": "withheld for privacy",
   "source": "Manual observation of visible Jira ticket pages and All open queue; not an API export",
   "project": "IT Service Project",
   "project_key": "IT",
@@ -47,5 +47,6 @@
     "queue-evidence.png (before closure fix)",
     "resolved-evidence.png (verified closure)",
     "queue-after-closure.png (two unresolved tickets)"
-  ]
+  ],
+  "timestamp_privacy": "Exact dates and timestamps withheld from this public copy; original evidence retained privately."
 }

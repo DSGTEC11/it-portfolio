@@ -1,6 +1,6 @@
 {
   "Lab": "LAB-001",
-  "CollectionTimeChicago": "2026-10-22 11:35:16 -05:00",
+  "CollectionTimeChicago": "withheld for privacy",
   "Method": "PowerShell collection on the actual Windows computer; selected read-only fields",
   "ElevatedSession": false,
   "OS": {
@@ -56,5 +56,6 @@
     "AntivirusEnabled": true,
     "RealTimeProtectionEnabled": true,
     "AntivirusSignatureAge": 0
-  }
+  },
+  "timestamp_privacy": "Exact dates and timestamps withheld from this public copy; original evidence retained privately."
 }
