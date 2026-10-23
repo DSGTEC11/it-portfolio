@@ -1,5 +1,9 @@
 # LAB-001: Windows system baseline
 
+- **Investigated:** The starting hardware, Windows configuration, storage, and selected security settings of a personal computer.
+- **Did:** Collected a read-only PowerShell baseline and cross-checked OS and registry values.
+- **Found:** 32 GiB of installed RAM, 73.29% free system-drive space, and enabled firewall and Defender flags. A legacy Windows label differed from the OS caption; no fault was diagnosed.
+
 **Status:** Completed read-only collection on [date withheld for privacy]. Real results from the portfolio owner's Windows computer. This is a learning exercise, not professional support experience.
 
 ## Objective and starting condition

@@ -1,5 +1,9 @@
 # LAB-002: Jira Service Management ticket workflow
 
+- **Investigated:** How to manage three fictional support requests and why a Jira ticket would not stay resolved.
+- **Did:** Assigned priorities and ownership, recorded internal notes, tested ticket transitions, and added a training resolution after finding an empty resolution list.
+- **Found:** IT-1 remained Resolved after reload; IT-2 remained Escalated and IT-3 Pending. The Jira closure issue was addressed; the fictional technical incidents were not repaired.
+
 **Date:** [date withheld for privacy]
 
 **Environment:** Jira Service Management Cloud, Service Collection Free signup, IT Service Project (IT).
@@ -39,17 +43,13 @@ This is a site-wide resolution value, not a custom field limited to one ticket. 
 
 ## Evidence
 
-Screenshots retained privately because they contain timestamps.
-
-Screenshots retained privately because they contain timestamps.
-
-Screenshots retained privately because they contain timestamps. preserves the initial observed state.
+Original Jira screenshots, including the initial and verified closure states, are retained privately because they contain timestamps. Public evidence is linked below.
 
 - [Selected observed results](evidence.json): manually recorded from the visible Jira interface; not a Jira API export.
 - [Fictional ticket descriptions and proposed troubleshooting](ticket-scenarios.md).
 - [Detailed VPN triage and escalation note saved to IT-2](vpn-triage-note.md).
 
-The screenshots are direct cropped captures of Jira. The crop excludes the browser address bar, site address, account-email control, and unrelated sidebar content. It retains the portfolio owner's professional name to show assignment; it contains no real customer data. Screenshot contents were not reconstructed or altered.
+Public JSON omits account IDs, email addresses, site addresses, organization identifiers, and exact timestamps. The ticket scenarios contain no real customer data.
 
 ## Interview explanation
 

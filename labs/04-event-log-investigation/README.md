@@ -1,5 +1,9 @@
 # LAB-004: Windows event-log investigation
 
+- **Investigated:** A Windows Time-Service DNS warning and whether nearby events showed recovery.
+- **Did:** Queried actual System events with PowerShell, correlated the event sequence, and separately checked DNS and service status.
+- **Found:** Valid time data and synchronization events followed within about a minute. A later check found W32Time stopped, so current synchronization remained unverified; no repair was performed.
+
 **Date:** [date withheld for privacy]. **Method:** Actual Windows event logs queried with PowerShell `Get-WinEvent`; the Event Viewer GUI was not used.
 
 **Result:** A time-service DNS warning was followed by valid-time-data and synchronization events. The initial DNS failure's cause remains unknown. Current synchronization could not be confirmed because the time service was stopped. No repair or configuration change was performed.
@@ -47,7 +51,7 @@ The collector intentionally stops if no matching event is available. It does not
 
 Screenshots retained privately because they contain timestamps.
 
-The screenshot is a direct crop of Jira. Public evidence excludes computer names, user/account IDs, SIDs, IP addresses, event record IDs and raw XML/messages. The professional portfolio name remains visible in Jira. No rollback was needed because no system settings were changed.
+Public evidence excludes computer names, user/account IDs, SIDs, IP addresses, event record IDs and raw XML/messages. Exact timestamps are withheld; elapsed times preserve the observed event sequence. No rollback was needed because no system settings were changed.
 
 ## Interview explanation
 

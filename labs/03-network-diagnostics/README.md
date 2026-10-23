@@ -1,5 +1,9 @@
 # LAB-003: Windows network baseline and connectivity checks
 
+- **Investigated:** Network configuration and connectivity from a personal Windows computer to a public test destination.
+- **Did:** Checked Wi-Fi and IP configuration, gateway reachability, DNS resolution, TCP port 443, and an HTTPS HEAD request.
+- **Found:** The gateway responded, DNS and TCP checks succeeded, and HTTPS returned HTTP 200. No fault was observed in the tested path and no repair was needed.
+
 **Date:** [date withheld for privacy]. **Jira record:** IT-4.
 
 **Completed actual lab:** Read-only checks on the personal Windows computer. No outage was injected, no fault was observed in the tested path, and no repair is claimed.
@@ -42,13 +46,13 @@ The default output replaces `evidence.json` with a new timestamped observation. 
 
 ## Verification and Jira documentation
 
-The [sanitized JSON](evidence.json) was produced by the script on the actual computer, not typed from expected outcomes. The script completed successfully; the JSON was parsed and the selected results reviewed. Jira IT-4 contains the observed results and limitations, is assigned to the lab owner, and has Low priority because this is planned lab work with no outage. A global resolution named **Lab completed** was added for actual completed labs; it does not imply incident repair. No default resolution or workflow definition was changed. IT-4 was closed as **Resolved / Lab completed**; status, resolution, Low priority and assignment were verified after reloading.
+The measurements in the [sanitized JSON](evidence.json) were collected by the script on the actual computer. Exact timestamps were subsequently withheld from the public copy. The script completed successfully; the JSON was parsed and the selected results reviewed. Jira IT-4 contains the observed results and limitations, is assigned to the lab owner, and has Low priority because this is planned lab work with no outage. A global resolution named **Lab completed** was added for actual completed labs; it does not imply incident repair. No default resolution or workflow definition was changed. IT-4 was closed as **Resolved / Lab completed**; status, resolution, Low priority and assignment were verified after reloading.
 
 Screenshots retained privately because they contain timestamps.
 
 ## Privacy, cleanup, and limitations
 
-The evidence omits addresses (local/public IP, gateway, DNS), SSID, MAC address, adapter descriptions, device/account identifiers, and raw exception messages. The direct Jira screenshot crop excludes the account email and site address; the portfolio owner's professional name remains. No employer or customer data was used.
+The evidence omits addresses (local/public IP, gateway, DNS), SSID, MAC address, adapter descriptions, device/account identifiers, and raw exception messages. Exact timestamps are withheld from public evidence; original Jira screenshots are retained privately. No employer or customer data was used.
 
 No settings changed, so no network rollback was needed. No DNS cache flush, adapter reset, restart, firewall change, VPN change, credential change, speed test, or internal-resource test was performed. Successful results describe one short sample to one public destination; they do not prove all sites work or long-term reliability. No baseline comparison or fault reproduction was performed.
 

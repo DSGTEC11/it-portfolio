@@ -39,7 +39,7 @@
     }
   ],
   "verification": "IT-1 Resolved / Simulation completed verified after reload. All open queue then showed only IT-2 Escalated and IT-3 Pending.",
-  "sanitization": "Direct screenshot crop excludes account email, site URL and unrelated UI. Professional name retained. Selected JSON omits account IDs, email, site address and organization identifiers.",
+  "sanitization": "Selected public JSON omits account IDs, email, site address, organization identifiers, and exact timestamps. Original Jira screenshots are retained privately.",
   "real_account_network_or_permission_changes": false,
   "closure_demonstration_complete": true,
   "configuration_change": "Empty global Resolutions table observed. Added Simulation completed; did not set a default or change workflow definitions.",

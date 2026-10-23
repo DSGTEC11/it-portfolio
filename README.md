@@ -15,7 +15,7 @@ Explore the [Jira workflow lab](labs/02-jira-service-management/README.md) for t
 | [03 · Windows network diagnostics](labs/03-network-diagnostics/README.md) | Adapter configuration, DHCP, routes, gateway, DNS, TCP and HTTPS checks | Actual successful checks, sanitized JSON, collector script and Jira IT-4 |
 | [04 · Windows event-log investigation](labs/04-event-log-investigation/README.md) | Event filtering, timestamp correlation and evidence-based conclusions | Actual Time-Service warning and recovery events; current synchronization limitation documented; Jira IT-5 |
 
-All four projects were documented on October 22, 2026. These are personal learning projects, not employment experience. Technical checks were performed on the personal computer; Jira customer cases are fictional. No live account unlock, VPN repair, or folder-access grant is claimed.
+These are personal learning projects, not employment experience. Technical checks were performed on the personal computer; Jira customer cases are fictional. No live account unlock, VPN repair, or folder-access grant is claimed.
 
 ## Support resources
 
@@ -30,7 +30,7 @@ All four projects were documented on October 22, 2026. These are personal learni
 
 ## Repository guide
 
-- **labs/** — completed investigations, scripts, selected evidence, screenshots, and lessons learned
+- **labs/** — completed investigations, scripts, selected evidence, and lessons learned
 - **runbooks/** — troubleshooting guides and support process
 - **templates/** — reusable documentation
 - **examples/** — fictional practice material
